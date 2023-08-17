@@ -19,6 +19,7 @@
     />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
+
   <body>
     <header class="header">
       <div class="container">
@@ -117,15 +118,18 @@
                 challenges into greater opportunities. We have an insatiable
                 curiosity about transformative trends challenging the status.
               </p>
-              <a href="tel:+380973456789" class="link phone"
+              <div class="wrapper_phone">
+                <a href="tel:+380973456789" class="link phone"
                 ><svg class="icon-phone" width="34" height="34">
                   <use href="./images/icons.svg#icon-phone"></use>
                 </svg>
-                <div>
-                  <p class="numbers-phone">0973456789</p>
-                  <p class="text-phone">Call Us Anytime</p>
-                </div>
               </a>
+              <div>
+                <a href="tel:+380973456789" class="link numbers-phone"> <p >0973456789</p></a>
+                <p class="text-phone">Call Us Anytime</p>
+              </div>
+              </div>
+              
               <button class="btn" type="button">Get Free Estimate</button>
             </div>
             <img
@@ -195,33 +199,33 @@
           <h2 class="visually-hidden">Partners</h2>
           <ul class="list partners_list">
             <li>
-              <a href="" class="link partner_link">  <svg width="132" height="43">
-                <use href="./images/icons.svg#icon-partner1"></use>
+              <a href="" class="link partner_link">
+                <svg width="132" height="43">
+                  <use href="./images/icons.svg#icon-partner1"></use></svg></a>
+            </li>
+            <li>
+              <a href="" class="link partner_link">
+              <svg width="103" height="103">
+                <use href="./images/icons.svg#icon-partner2"></use>
               </svg></a>
             </li>
             <li>
-              <a href="" class="link partner_link"></a>
-              <svg width="103" height="103">
-                <use href="./images/icons.svg#icon-partner2"></use>
-              </svg>
-            </li>
-            <li>
-              <a href="" class="link partner_link"></a>
+              <a href="" class="link partner_link">
               <svg width="164" height="43">
                 <use href="./images/icons.svg#icon-partner3"></use>
-              </svg>
+              </svg></a>
             </li>
             <li>
-              <a href="" class="link partner_link"></a>
+              <a href="" class="link partner_link">
               <svg width="145" height="45">
                 <use href="./images/icons.svg#icon-partner4"></use>
-              </svg>
+              </svg></a>
             </li>
             <li>
-              <a href="" class="link partner_link"></a>
+              <a href="" class="link partner_link">
               <svg width="117" height="48">
                 <use href="./images/icons.svg#icon-partner5"></use>
-              </svg>
+              </svg></a>
             </li>
           </ul>
         </div>
@@ -455,8 +459,7 @@
                 rel="noopener noreferrer"
               >
                 <svg width="10" height="19">
-                  <use href="./images/icons.svg#icon-facebook"></use></svg
-              ></a>
+                  <use href="./images/icons.svg#icon-facebook"></use></svg></a>
             </li>
             <li class="soc-link_item">
               <a
@@ -489,8 +492,7 @@
                 rel="noopener noreferrer"
               >
                 <svg width="17" height="18">
-                  <use href="./images/icons.svg#icon-instagram"></use></svg
-              ></a>
+                  <use href="./images/icons.svg#icon-instagram"></use></svg></a>
             </li>
           </ul>
         </div>
@@ -530,8 +532,8 @@
       </div>
       <div class="copy">
         <p class="copy-text">
-          Copyright &copy; Interno | Designed by Victorflow Templates - Powered
-          by Webflow
+          Copyright &copy; Interno | Designed by <span class="accent">Victorflow</span>  Templates - Powered
+          by <span class="accent">Webflow</span> 
         </p>
       </div>
     </footer>
