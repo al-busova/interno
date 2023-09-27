@@ -125,6 +125,7 @@ img {
   line-height: 1.5;
   letter-spacing: 0.22px;
 }
+/* дописати адаптивну кнопку */
 .btn {
   position: relative;
   padding: 21px 66px 21px 33px;
@@ -165,7 +166,7 @@ img {
   align-items: center;
 }
 .direction-item {
-  width: 400px;
+  flex-basis: 100%/3;
   height: 395px;
   padding: 75px 52px 0 52px;
 }
@@ -289,7 +290,7 @@ img {
   gap: 18px;
 }
 .card-review {
-  width: 354px;
+  flex-basis: 354px;
   padding: 50px 75px 45px 35px;
   background-color: #ffffff;
   border-radius: 30px;
@@ -415,7 +416,7 @@ img {
 }
 .progress-item {
   position: relative;
-  width: 288px;
+  flex-basis: 288px;
   padding: 14px 0 10px;
 }
 .progress-item:not(:last-child)::after {
@@ -461,7 +462,7 @@ img {
 }
 .blog-item {
   position: relative;
-  width: 387px;
+  flex-basis: 387px;
   height: 515px;
   margin-right: 19px;
   padding: 21px;
