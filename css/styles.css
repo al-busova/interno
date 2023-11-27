@@ -61,10 +61,11 @@ img {
 }
 .header {
   padding-top: 26px;
-  padding-bottom: 18px;
+  padding-bottom: 30px;
 }
 .header .container {
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 .logo {
@@ -97,8 +98,8 @@ img {
   color: var(--accent);
 }
 .hero {
-  padding-top: 195px;
-  padding-bottom: 250px;
+  padding-top: 188px;
+  padding-bottom: 260px;
   background-image: url("../images/bg_hero.jpg");
   background-size: 1440px;
   background-repeat: no-repeat;
@@ -126,12 +127,12 @@ img {
   letter-spacing: 0.22px;
 }
 /* дописати адаптивну кнопку */
-.wrapper-btn {
+/* .wrapper-btn {
   position: relative;
   width: 130px;
-}
+} */
 .btn {
-  padding: 21px 66px 21px 33px;
+  padding: 21px 20px 21px 33px;
   border-radius: 18px;
   border: 1px solid transparent;
   background-color: #292f36;
@@ -148,22 +149,25 @@ img {
   border-color: var(--accent);
   cursor: pointer;
 }
-.arrow {
-  position: absolute;
-  top: 18.5px;
-  right: 20px;
-  width: 11px;
-  height: 36px;
-  background-image: url("../images/arrow-accent.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 11px 36px;
+.btn {
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
-.arrow-connect {
-  background-image: url("../images/arrow-connect.svg");
+.btn::after {
+  content: '';
+  display: inline-block;
+  width: 24px;
+  height: 36px;
+  background-image:url(../images/line_btn.svg), url(../images/arrow-accent.svg);
+  background-repeat: no-repeat;
+  background-position: left, right;
+}
+.btn-accent.btn::after {
+   background-image:url(../images/line_btn_dark.svg), url(../images/arrow-connect.svg);
 }
 .directions {
-  padding: 100px 0;
+  padding: 175px 0 170px 0;
 }
 .directions-list {
   display: flex;
@@ -231,6 +235,9 @@ img {
 .wrapper-estimate {
   display: flex;
   gap: 77px;
+}
+.leftside-estimate {
+  margin-top: 40px;
 }
 .estimate-description {
   margin-bottom: 40px;
@@ -326,7 +333,7 @@ img {
   line-height: 1.5;
 }
 .partners {
-  padding-bottom: 115px;
+  padding-bottom: 113px;
 }
 .partners_list {
   display: flex;
@@ -361,9 +368,6 @@ img {
   display: flex;
   flex-wrap: wrap;
 }
-.project-card {
-  position: relative;
-}
 .project-card:nth-child(2n + 1) {
   margin-right: 20px;
 }
@@ -372,6 +376,11 @@ img {
 }
 .project-img {
   margin-bottom: 24px;
+}
+.wrapper-info-project {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .project-title {
   font-family: DM Serif Display;
@@ -397,9 +406,6 @@ img {
     var(--timing-fun) background-size 250ms var(--timing-fun);
 }
 .btn-project {
-  position: absolute;
-  bottom: 0;
-  right: 0;
   width: 70px;
   height: 70px;
 }
@@ -451,7 +457,7 @@ img {
   line-height: 1.5;
 }
 .blogs {
-  padding: 145px 0 140px;
+  padding: 142px 0 140px;
 }
 .blogs .section-title {
   margin-bottom: 21px;
@@ -465,7 +471,6 @@ img {
   justify-content: center;
 }
 .blog-item {
-  position: relative;
   flex-basis: 387px;
   height: 515px;
   margin-right: 19px;
@@ -504,6 +509,11 @@ img {
   line-height: 1.4;
   letter-spacing: 0.5px;
 }
+.wrapper-bottom-blog {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 .blog-date {
   color: #4d5053;
   font-family: Jost;
@@ -513,9 +523,6 @@ img {
   letter-spacing: 0.22px;
 }
 .btn-blog {
-  position: absolute;
-  bottom: 41px;
-  right: 21px;
   width: 52px;
   height: 52px;
 }
@@ -535,12 +542,11 @@ img {
   font-weight: 400;
   line-height: 1.5;
 }
-.wrapper-btn-accent {
-  position: relative;
-  width: 240px;
-  margin: 0 auto;
+.wrapper-btn-connect {
+margin: 0 auto;
+width: 240px;
 }
-.btn.btn-accent {
+.btn-accent {
   background-color: #cda274;
   filter: drop-shadow(1px 0px 18px rgba(0, 0, 0, 0.2));
 }
@@ -622,6 +628,7 @@ img {
   font-style: normal;
 }
 .copy {
+  position: relative;
   padding: 35px 0;
   border-top: 1px solid #e5e5e5;
   text-align: center;
@@ -631,4 +638,13 @@ img {
 }
 .copy-text .accent {
   color: var(--accent);
+}
+.copy::before {
+  content: '';
+  position: absolute;
+  width: 100vw;
+  height: 1px;
+  top: 0;
+  left: 0;
+  background-color: #E5E5E5;
 }
