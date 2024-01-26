@@ -173,7 +173,7 @@ img {
   align-items: center;
 }
 .direction-item {
-  flex-basis: 100%/3;
+  flex-basis: calc(100%/3);
   height: 395px;
   padding: 75px 52px 0 52px;
 }
