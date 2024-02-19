@@ -211,7 +211,7 @@ img {
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.36px;
-  transition: transform 250ms var(--timing-fun) border 250ms var(--timing-fun);
+  transition: transform 250ms var(--timing-fun), border 250ms var(--timing-fun);
 }
 .direction-btn:hover,
 .direction-btn:focus {
@@ -261,7 +261,7 @@ img {
   border-radius: 50%;
   border: 2px solid transparent;
   background-color: #f4f0ec;
-  transition: border-color 250ms var(--timing-fun) background-color 250ms
+  transition: border-color 250ms var(--timing-fun), background-color 250ms
     var(--timing-fun);
 }
 .phone:hover,
@@ -401,8 +401,8 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 9px 16px;
-  transition: transform 250ms var(--timing-fun) background-color 250ms
-    var(--timing-fun) background-size 250ms var(--timing-fun);
+  transition: transform 250ms var(--timing-fun), background-color 250ms
+    var(--timing-fun), background-size 250ms var(--timing-fun);
 }
 .btn-project {
   width: 70px;
@@ -575,7 +575,7 @@ width: 240px;
   width: 45px;
   height: 45px;
   border-radius: 50%;
-  transition: background-color 250ms var(--timing-fun) transform 250ms
+  transition: background-color 250ms var(--timing-fun), transform 250ms
     var(--timing-fun);
 }
 .soc-link_item .link:hover,
